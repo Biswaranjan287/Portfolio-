@@ -277,8 +277,7 @@ const ShaderMaterial = ({
         });
 
         return materialObject;
-    }, [size.width, size.height, source]);
-
+    });
     return (
         <mesh ref={ref}>
             <planeGeometry args={[2, 2]} />

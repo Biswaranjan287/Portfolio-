@@ -4,6 +4,7 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import Image from "next/image";
 
 const Clients = () => {
     return (
@@ -29,10 +30,12 @@ const Clients = () => {
                 <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 max-lg:mt-5">
                     {companies.map((company) => (
                         <div key={company.id} className="w-10 md:w-12 flex justify-center">
-                            <img
+                            <Image
                                 src={company.img}
                                 alt=""
                                 className="w-full h-auto object-contain"
+                                width={200}
+                                height={100}
                             />
                         </div>
                     ))}
