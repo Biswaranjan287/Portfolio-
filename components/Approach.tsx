@@ -186,12 +186,8 @@ const AceternityIcon = ({ order }: { order: string }) => {
         // </svg>
     );
 };
-interface IconProps {
-  className?: string; // `className` is optional
-  [key: string]: any; // Allows for any additional props, but this is a temporary fix for now.
-}
 
-export const Icon = ({ className, ...rest }: IconProps) => {
+export const Icon = ({ className, ...rest }: any) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

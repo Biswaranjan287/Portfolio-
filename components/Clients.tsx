@@ -31,7 +31,7 @@ const Clients = () => {
                         <div key={company.id} className="w-10 md:w-12 flex justify-center">
                             <img
                                 src={company.img}
-                                alt=""
+                                // alt={company.name}
                                 className="w-full h-auto object-contain"
                             />
                         </div>
