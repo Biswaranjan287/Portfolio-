@@ -102,6 +102,7 @@ export const testimonials = [
             "My web development journey began with a curiosity for front-end design. I started with the fundamentals of HTML, CSS, and JavaScript before moving on to modern frameworks like React. This allowed me to build dynamic and responsive interfaces. I specialize in using Tailwind CSS to create clean, user-friendly designs that balance aesthetics with functionality.",
         name: "",
         title: "",
+        
     },
     {
         quote:
