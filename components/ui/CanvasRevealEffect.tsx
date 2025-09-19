@@ -232,11 +232,10 @@ const ShaderMaterial = ({
 
         // Handle material safely
         const mat = Array.isArray(ref.current.material)
-            ? ref.current.material[0]
-            : ref.current.material;
+            ? ref.current.material[0] as THREE.ShaderMaterial
+            : ref.current.material as THREE.ShaderMaterial | undefined;
 
-        // Only update if it's a ShaderMaterial
-        if (mat instanceof THREE.ShaderMaterial && mat.uniforms.u_time) {
+        if (mat && mat.uniforms && mat.uniforms.u_time) {
             mat.uniforms.u_time.value = timestamp;
         }
     });
